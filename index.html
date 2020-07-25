@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <p></p>
+    </header>
+    <main id="principal">
+        <section id="datos_personales">
+            <article id="art_nombre">
+                <input placeholder="Ingrese su nombre" type="text" id="in_nombre" required>
+                <label id="lb_nombre" for="in_nombre">Nombre</label>
+            </article>
+            <article id="art_correo">
+                <input placeholder="Ingrese su correo electronico" type="email" id="in_correo" required>
+                <label for="in_correo" id="lb_correo">Correo</label>
+            </article>
+            <article id="art_edad">
+                <input placeholder="Edad" id="in_edad" type="number" required>
+                <label for="in_edad" id="lb_edad">Edad</label>
+            </article>
+            <article id="art_a_que_se_dedica">
+                <p>¿A que se dedica?</p>
+                <select id="a_que_se_dedica" required>
+                    <option disabled selected value>Seleccione una opción</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Trabajo de tiempo completo">Trabajo de tiempo completo</option>
+                    <option value="Aprendiz a tiempo completo">Aprendiz a tiempo completo</option>
+                    <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </article>
+        </section>
+        <section id="info">
+            <article id="nos-recomendaria">
+                <label for="in_recomendaria" id="lb_definitivamente">
+                    <input value="Definitivamente" name="recomienda" id="in_definitivamente" type="radio" checked> Definitivamente
+                </label>
+                <label for="in_recomendaria" id="lb_tal_vez">
+                    <input value="Tal Vez" name="recomienda" id="in_tal_vez" type="radio"> Tal Vez
+                </label>
+                <label for="in_recomendaria" id="lb_no_estoy_seguro">
+                    <input value="No estoy seguro" name="recomienda" id="in_no_estoy_seguro" type="radio"> No estoy seguro
+                </label>    
+            </article>
+            <article id="art_caracteristica_favorita">
+                <p>
+                    ¿Cuál es su característica favorita?
+                </p>
+                <select name="sel_caracteristicas" id="id_caracteriticas">
+                    <option disabled selected value>Seleccione una opción</option>
+                    <option value="desafios">Desafíos</option>
+                    <option value="proyectos">Proyectos</option>
+                    <option value="comunidad">Comunidad</option>
+                    <option value="fuente_abierta">Fuente Abierta</option>
+                </select>
+            </article>
+            <article id="art_mejora">
+                <p>
+                    ¿Qué te gustaría mejorar? 
+                    <span>(Marque todo lo qe corresponda)</span>
+                </p>
+                <label for="id_proyectos_front_ent">
+                    <input name="prefiere" value="proyectos_front_ent" id="id_proyectos_front_ent" type="checkbox">Proyectos Front_end
+                </label>
+                <label for="id_proyectos_back_end">
+                    <input name="prefiere" value="proyectos_back_end" id="id_proyectos_back_end" type="checkbox">Proyectos Back-end</label>
+                <label for="id_visualizacion_datos">
+                    <input name="prefiere" value="visualizacion_datos" id="id_visualizacion_datos" type="checkbox">Visualización de datos</label>
+                <label for="id_desafios">
+                    <input name="prefiere" value="desafios" id="id_desafios" type="checkbox">Desafíos</label>
+                <label for="id_comunidad_codigo_abierto">
+                    <input name="prefiere" value="comunidad_codigo_abierto" id="id_comunidad_codigo_abierto" type="checkbox">Comunidad de código abierto</label>
+                <label for="id_salas_ayuda">
+                    <input name="prefiere" value="salas_ayuda" id="id_salas_ayuda" type="checkbox">Salas de ayuda Gitter</label>
+                <label for="id_videos">
+                    <input name="prefiere" value="videos" id="id_videos" type="checkbox">Videos</label>
+                <label for="id_wiki">
+                    <input name="prefiere" value="wiki" id="id_wiki" type="checkbox">Wiki</label>
+                <label for="id_foro">
+                    <input name="prefiere" value="foro" id="id_foro" type="checkbox">Foro</label>
+                <label for="id_cursos_adicionales">
+                    <input name="prefiere" value="cursos_adicionales" id="id_cursos_adicionales" type="checkbox">Cursos adicionales</label>
+            </article>
+            <article>
+                <p>
+                    ¿Algún comentarioo sugerencia?
+                </p>
+                <textarea id="comentario" placeholder="Ingrese su comentario aquí..."></textarea>
+            </article>
+            <article>
+                <button type="submit" id="enviar">Enviar</button>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
