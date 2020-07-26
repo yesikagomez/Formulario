@@ -1,0 +1,82 @@
+body {
+    background-color: #006D77;
+    padding: 10%;
+}
+header {
+    margin-top: -100px;
+    color: #EDF6F9;
+    font-size: 30px;
+    text-align: center;
+}
+header p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -50px;
+}
+#principal {
+    background-color: #83C5BE;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+}
+#principal #datos_personales input {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    margin-block-end: 20px;
+    height: 2.375rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 20px;
+}
+#principal section {
+    padding: 5%;
+}
+#principal #info #art_mejora label {
+    display: flex;
+}
+#principal select {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    margin-block-end: 20px;
+    height: 2.375rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 20px;
+}
+#principal #info #nos-recomendaria {
+    margin-top: -115px;
+}
+#principal #info #art_comentario #comentario{
+    width: 100%;
+    margin-top: 15px;
+    margin-block-end: 20px;
+    min-height: 120px;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 20px;
+}
+#principal #info #art_enviar button {
+    width: 80%;
+    height: 2.375rem;
+    color: black;
+    background-color: #E29578;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 20px;
+    margin-left: 13%;
+}
+#principal #datos_personales input {
+    display: flex;
+}

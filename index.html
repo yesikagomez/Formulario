@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Formulario</title>
 </head>
 <body>
     <header>
-        <h1></h1>
-        <p></p>
+        <h1>
+            Formulario de encuesta
+        </h1>
+        <p>
+            Gracias por tomarse el tiempo para ayudarnos a mejorar.
+        </p>
     </header>
     <main id="principal">
         <section id="datos_personales">
             <article id="art_nombre">
+                <label id="lb_nombre" for="in_nombre">Nombre: </label>
                 <input placeholder="Ingrese su nombre" type="text" id="in_nombre" required>
-                <label id="lb_nombre" for="in_nombre">Nombre</label>
             </article>
             <article id="art_correo">
+                <label for="in_correo" id="lb_correo">Correo: </label>
                 <input placeholder="Ingrese su correo electronico" type="email" id="in_correo" required>
-                <label for="in_correo" id="lb_correo">Correo</label>
             </article>
             <article id="art_edad">
+                <label for="in_edad" id="lb_edad">Edad: </label>
                 <input placeholder="Edad" id="in_edad" type="number" required>
-                <label for="in_edad" id="lb_edad">Edad</label>
             </article>
             <article id="art_a_que_se_dedica">
                 <p>¿A que se dedica?</p>
@@ -38,6 +43,7 @@
         </section>
         <section id="info">
             <article id="nos-recomendaria">
+                <p>Nos recomendaría</p>
                 <label for="in_recomendaria" id="lb_definitivamente">
                     <input value="Definitivamente" name="recomienda" id="in_definitivamente" type="radio" checked> Definitivamente
                 </label>
@@ -63,7 +69,7 @@
             <article id="art_mejora">
                 <p>
                     ¿Qué te gustaría mejorar? 
-                    <span>(Marque todo lo qe corresponda)</span>
+                    <span>(Marque todo lo que corresponda)</span>
                 </p>
                 <label for="id_proyectos_front_ent">
                     <input name="prefiere" value="proyectos_front_ent" id="id_proyectos_front_ent" type="checkbox">Proyectos Front_end
@@ -87,13 +93,13 @@
                 <label for="id_cursos_adicionales">
                     <input name="prefiere" value="cursos_adicionales" id="id_cursos_adicionales" type="checkbox">Cursos adicionales</label>
             </article>
-            <article>
+            <article id="art_comentario">
                 <p>
                     ¿Algún comentarioo sugerencia?
                 </p>
                 <textarea id="comentario" placeholder="Ingrese su comentario aquí..."></textarea>
             </article>
-            <article>
+            <article id="art_enviar">
                 <button type="submit" id="enviar">Enviar</button>
             </article>
         </section>
